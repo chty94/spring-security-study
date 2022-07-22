@@ -1,0 +1,26 @@
+spring:
+#  security:
+#    user:
+#      name: user
+#      password: 123
+#      roles: ADMIN
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: create-drop
+
+  datasource:
+    hikari:
+      jdbc-url: jdbc:h2:mem:gongmo
+      driver-class-name: org.h2.Driver
+      username: sa
+  sql:
+    init:
+      data-locations: classpath:/data.sql
+

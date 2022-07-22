@@ -1,0 +1,1 @@
+INSERT INTO ACCOUNT (ID, PASSWORD, ROLE, USERNAME) VALUES (1, '{bcrypt}$2a$10$2gANbBQNksBmOmHB2vpvjud1ajy0ylqmVMmwiZ89fMh5IYV8JUlj6', 'ADMIN', 'admin');
